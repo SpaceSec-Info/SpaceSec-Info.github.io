@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SpaceSec 2024</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+        /* Default background image for larger screens */
+        @media all and (min-width: 767px) {
+            .bg-image {background-image:url('../images/1372134458-larger.jpg'); background-position: center; background-size: cover; min-height: 500px; display: flex; justify-content: center; align-items: center;}
+        }
+        /* Smaller screens (phones) */
+        @media all and (max-width: 767px) {
+            .bg-image {background-image:url('../images/1372134458-mobile.jpg'); background-position: center; background-size: cover; min-height: 500px; display: flex; justify-content: center; align-items: center;}
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
+ 
+    </head>
+    
+    <body>
+        
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="spacesec24_index.html">SpaceSec 2024</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="spacesec24_program.html#program">Program</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#cfp">Call for Papers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#committee">Organization</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../past_workshops.html">Past Workshops</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Current Workshop</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <script>
+            // Add JavaScript to close the collapse menu using Bootstrap animation
+            var navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+            var navbarToggler = document.querySelector('.navbar-toggler');
+        
+            navLinks.forEach(function (link) {
+                link.addEventListener('click', function () {
+                    if (navbarToggler.classList.contains('collapsed')) {
+                        // Menu is already closed
+                        return;
+                    }
+                    navbarToggler.click(); // Trigger click event to close the menu
+                });
+            });
+        </script>
+        
+        <div class="p-5 text-white bg-image">
+            <div style="background-color: rgba(52, 58, 64, 0.5);" class="p-5 rounded">
+                <h1>SpaceSec 2024</h1>
+                <h2>2nd Workshop on the Security of Space and Satellite Systems</h2>
+                <h3>Co-located with the <a class="text-white" href="https://www.ndss-symposium.org/ndss2024/">NDSS Symposium</a></h3>
+                <h3>1 March 2024</h3>
+            </div>
+        </div>
+        
+        <div class="container mt-4">
+            <p>Novel mega-constellations in Low Earth Orbit (LEO), including those of Starlink, OneWeb and others, will see over 100,000 satellites in space over the next several years. They will increasingly fulfill communication functions in both consumer settings and critical infrastructures. These critical functions, ranging from global navigation and positioning systems to providing phone connections, imaging data and general-purpose data links, play an ever more crucial role in modern society. The precarious place of satellite systems in the communication and navigation infrastructure naturally makes them attractive targets for cyber attacks. This was evidenced in a major attack on the ViaSat network during the initial days of the war in Ukraine and ongoing disruptions of GlobalNavigation Satellite Systems (GNSS) around the world.</p>
+            <p>The principal vulnerability of satellite systems has been known publicly since the mid-2000s due to multiple discussions at academic and hacker conferences. Despite these early warnings, recent evidence shows that the security of both legacy and novel deployments is still severely lacking. Recent publications at several major security venues generated much-renewed interest and illustrated that the same problems remain — now on a much larger scale. Clearly, many insights from the computer and network security communities have never been applied to space systems, urgently requiring action informed by research. Following other successful workshops on critical (transportation) infrastructures, we hold SpaceSec, the first academic workshop dedicated exclusively to security in the space and satellite ecosystems.</p>
+            <p>SpaceSec will bring together academic researchers, industry professionals, and government representatives to contribute to new theories, technologies, and systems for security/privacy challenges in space and on the ground. SpaceSec will be held in San Diego, CA, in conjunction with the Network and Distributed System Security Symposium (NDSS) 2024.</p>
+            <p><strong>Deadline Clarification:</strong> Both deadlines require properly anonymized full paper submissions. The two deadlines are identical, but the first deadline leaves more time to apply for a US visa or other paperwork if required.</p>
+            
+            <h1>Important Dates</h1>
+            
+            <table class="table table-striped table-borderless">
+                <tbody>
+                    <tr>
+                        <td>First Paper Submission Deadline</td>
+                        <td><strong>7 December 2023 (AoE)</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Second Paper Submission Deadline</td>
+                        <td><s>12 January</s>&nbsp;<strong>15 January 2024 (AoE)</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Notification of Acceptance (1st Deadline)</td>
+                        <td>22 December 2023 (AoE)</td>
+                    </tr>
+                    <tr>
+                        <td>Notification of Acceptance (2nd Deadline)</td>
+                        <td>2 February 2023 (AoE)</td>
+                    </tr>
+                    <tr>
+                        <td>Workshop Date</td>
+                        <td>1 March 2024, 8.30am (Pacific Standard Time)</td>
+                    </tr>
+                    <tr>
+                        <td>Camera Ready Submission</td>
+                        <td>17 March 2024 (AoE)</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <hr>
+            
+            <!-- This helps us to make sure the heading is not hidden under the navbar -->
+            <h1 id="cfp" style="scroll-margin-top: 70px">Call for Papers</h1>
+            <p>The scope of SpaceSec comprises all systems that are directly or indirectly related to or dependent on space and satellite systems. More concretely, this includes the communication links (satellite – ground, satellite – satellite), the ground segment (including ground stations, systems dependent on satellite communications), and the space segment (i.e., satellites and launch vehicles) as well as all potential use cases (e.g., imaging or navigation) and dependencies of satellite applications. All space orbits are of interest, but particularly research into modern low-Earth orbit mega-constellations is invited. The workshop welcomes contributions that have a clear relevance to space and satellite systems and applications. Topics of interest include but are not limited to the following:</p>
+
+                    <h3>Space Systems Security</h3>
+                    <ul>
+                        <li>Small Satellite and CubeSat Security</li>
+                        <li>Ground/User Segment Attacks and Vulnerabilities</li>
+                        <li>Legacy Space System Security Analysis</li>
+                        <li>Space System Security Testbeds</li>
+                        <li>Measurement Infrastructure and Data Collection of Space Mission Security Data</li>
+                        <li>Security of Launch Vehicles and Launch Processes</li>
+                        <li>GNSS Attack and Defense Mechanisms</li>
+                        <li>Security of Space Situational Awareness (SSA) Technologies</li>
+                        <li>Data- and ML-driven Security of Space Missions</li>
+                        <li>Secure Satellite Software/Hardware Development</li>
+                        <li>Reverse Engineering and Tampering of Space and Ground Segments</li>
+                        <li>Side-Channels and Fault Attacks on Space- or User Segment Devices</li>
+                        <li>In-Orbit Intrusion Detection</li>
+                    </ul>
+
+                    <h3>Communications Security</h3>
+                    <ul>
+                        <li>Satellite Link Jamming and Spoofing</li>
+                        <li>Securing and Attacking Inter-Satellite Links</li>
+                        <li>Optical Satellite Communication Security</li>
+                        <li>(Post-quantum) Cryptography for Space Communications</li>
+                        <li>LEO Constellation Routing Security</li>
+                        <li>Secure Optimized Satellite Communication Protocols (e.g., PEPs, QUIC)</li>
+                        <li>Key Management for (LEO) Constellations and Space Systems</li>
+                    </ul>
+
+                    <h3>Privacy and Usability</h3>
+                    <ul>
+                        <li>Localization and Anonymity in satellite networks</li>
+                        <li>Privacy Issues in Satellite Communication</li>
+                        <li>Ethical Aspects of Satellite Security</li>
+                        <li>Usability of Existing Space Software and Standards</li>
+                    </ul>
+
+                    <h3>Space Security Strategies</h3>
+                    <ul>
+                        <li>Economics of Space Security</li>
+                        <li>Game Theory-based Security Analysis Approaches</li>
+                        <li>Red Teaming and Blue Teaming in Space</li>
+                        <li>Supply Chain Security for Space Mission Components</li>
+                        <li>Forensics in Space Security Incidents</li>
+                    </ul>
+            
+            <h2>Submission Guidelines</h2>
+            <p>All papers must be original and not simultaneously submitted to another journal or conference. The following paper types are welcome:</p>
+            
+            <p><strong>Short Paper:</strong> Submissions must be no longer than <strong>four</strong> pages. Short papers should provide enough context and background for the reader to understand the contribution. We envision that short papers will be preliminary work type papers, but this is not a hard requirement.</p>
+            
+            <p><strong>Long Paper:</strong> Submissions must be no longer than <strong>eight</strong> pages. These are typically traditional research papers.</p>
+            
+            <p>All papers are to be submitted in double-column <a href="https://www.ndss-symposium.org/ndss2024/submissions/templates/">NDSS format</a>. The page limits do not include bibliography and well-marked appendices, which can be up to 2 pages long for each long paper and up to 1 page long for each short paper.</p>
+            
+            <div class="container p-5 bg-light">
+                <strong>Submission link:</strong> <a href="https://spacesec24a.hotcrp.com/">https://spacesec24a.hotcrp.com/</a>
+            </div>
+            
+            <br>
+            
+            <p>Inspired by the CSET workshop, we invite the following paper categories. There is no requirement to mark them as such but we expect that extended work papers are clearly positioned and set apart against prior work:</p>
+            
+            <ul>
+                <li><strong>Research Paper:</strong>&nbsp;make a novel contribution in line with one of the topics of interest.</li>
+                <li><strong>Position Paper:</strong>&nbsp;discuss new or provocative security-related ideas of interest to the satellite and space communities.</li>
+                <li><strong>Experience Paper:</strong>&nbsp;describe activities and recount lessons learned (e.g., from experiments or deployments) that might help researchers and practitioners in the future.</li>
+                <li><strong>Preliminary Work Paper:</strong>&nbsp;describe early results from interesting and new ideas. We anticipate that such works-in-progress papers may eventually be extended as full papers for publication at a conference.</li>
+                <li><strong>Extended Work Paper:</strong>&nbsp;expand upon unpublished aspects of a previous work (published in any venue) fitting into any of the topics of interest. We welcome papers that provide a compelling addition to a previously developed approach, method, tool, measurement, benchmark, data set, simulation/emulation, evaluation results, etc.</li>
+            </ul>
+            
+            <p><strong>Anonymization and the Review Process:</strong> The review process will be double-blind; all submissions should be anonymized so as not to reveal the authors’ names or affiliations during the review process.</p>
+            
+            <p><strong>Publication:</strong> SpaceSec24 proceedings will be published as post-conference proceedings with the Network and Distributed Systems Symposium (NDSS) 2024.</p>
+            
+            <p><strong>Further Notes:</strong> At least one author from every accepted paper must register for the workshop and present the paper. Fraud and dishonesty are prohibited, including: simultaneous submission of the same work to multiple venues, submission of previously published work, and plagiarism.</p>
+             
+
+            <h2>SpaceSec - CySat Collaboration</h2>
+
+            <p>SpaceSec collaborates with the CySat 2024 conference on satellite security in Paris to offer additional exposure to accepted papers. Up to five accepted papers from the SpaceSec workshop will be selected and given a chance to present their work on the CySat in Paris in person. Papers that want to participate in this selection can mark a checkbox during the submission to state their interest in participating. For each accepted and selected paper, up to two persons can present the work in Paris and will each get a free conference ticket. The in-person presentation can be either via a virtual poster or a traditional slide presentation. During the event, CySat will provide you with a high-table + chairs, and TV screen to present your work. Papers with potential technical demonstrations have increased chances of being selected and will be asked to present their demonstration live on-site in Paris.</p>
+
+            <hr>
+            
+            <!-- This helps us to make sure the heading is not hidden under the navbar -->
+            <h1 id="committee" style="scroll-margin-top: 70px">Organization</h1>
+
+            <h3>General Chair</h3>
+            <p>Johannes Willbold, Ruhr University Bochum (DE), <a href="mailto:johannes.willbold@rub.de">johannes.willbold@rub.de</a></p>
+            
+            <h3>Programme Committee Chairs</h3>
+            <p>Ivan Martinovic, University of Oxford (UK), <a href="mailto:ivan.martinovic@cs.ox.ac.uk">ivan.martinovic@cs.ox.ac.uk</a></p>
+            <p>Knut Eckstein, European Space Agency (Europe), <a href="mailto:knut.eckstein@esa.int">knut.eckstein@esa.int</a></p>
+
+            <h3>Steering Committee</h3>
+            <ul>
+                <li>Vincent Lenders, Cyber-Defence Campus, armasuisse S+T (CH)</li>
+                <li>Ivan Martinovic, University of Oxford (UK)</li>
+                <li>Christina Pöpper, NYU Abu Dhabi (UAE)</li>
+                <li>Knut Eckstein, European Space Agency (Europe)</li>
+                <li>James Pavur, Defense Digital Service, Department of Defense (USA)</li>
+                <li>Martin Strohmeier, Cyber-Defence Campus, armasuisse S+T (CH)</li>
+                <li>Johannes Willbold, Ruhr University Bochum (DE)</li>
+            </ul>
+
+            <h3>Web Chair</h3>
+            <p>Simon Birnbach, University of Oxford (UK)</p>
+
+            <h3>Publicity Chair</h3>
+            <p>Sebastian Köhler, University of Oxford (UK)</p>
+
+            <h3>Program Committee</h3>
+                    <ul>
+                        <li>Ali Abbasi, CISPA (DE)</li>
+                        <li>Antonios Atlasis, European Space Agency (Europe)</li>
+                        <li>Christoph Bader, Airbus (Europe)</li> 
+                        <li>Brandon Bailey, Aerospace Corp (US)</li>
+                        <li>Simon Birnbach, University of Oxford (UK)</li>
+                        <li>Yueqi Chen, University of Colorado Boulder (US)</li>
+                        <li>Greg Falco, Cornell University (US)</li>
+                        <li>Daniel Fischer, European Space Agency (Europe)</li>
+                        <li>Giuliari Giacomo, Mysten Labs (US)</li>
+                        <li>Christian Gorecki, OHB (DE)</li>
+                        <li>Oana Graur, European Space Agency (Europe)</li>
+                        <li>Thorsten Holz, CISPA (DE)</li>
+                        <li>Samuel Jero, MIT Lincoln Laboratory (US)</li>
+                        <li>Gunes Karabulut-Kurt, Polytechnique Montréal (CA)</li>
+                        <li>Sebastian Köhler, University of Oxford (UK)</li>
+                        <li>Vincent Lenders, Cyber-Defence Campus, armasuisse S+T (CH)</li>
+                        <li>Mark Manulis, University of the Bundeswehr Munich (DE)</li>
+                        <li>Christina Pöpper, NYU Abu Dhabi (UAE)</li>
+                        <li>Aanjhan Ranganathan, Northeastern University (US)</li>
+                        <li>Harshad Sathaye, ETH Zurich (CH)</li>
+                        <li>Mridula Singh, CISPA (DE)</li>
+                        <li>Martin Strohmeier, Cyber-Defence Campus, armasuisse S+T (CH)</li>
+                        <li>Nils Ole Tippenhauer, CISPA (DE)</li>
+                        <li>Howard Weiss, NASA/JPL/Parsons (US)</li>
+                        <li>Verena Zimmermann, ETH Zurich (CH)</li>
+                    </ul>
+           
+        <hr>
+
+        <h1>Contact</h1>
+        <p>All questions about submissions should be emailed to&nbsp;<a href="mailto:simon.birnbach@cs.ox.ac.uk">simon.birnbach@cs.ox.ac.uk</a></p>
+        
+            <br>
+            <br>
+        </div>
+
+    </body>
+    </html>

@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SpaceSec 2026</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+        /* Default background image for larger screens */
+        @media all and (min-width: 767px) {
+            .bg-image {background-image:url('../images/1372134458-larger.jpg'); background-position: center; background-size: cover; min-height: 500px; display: flex; justify-content: center; align-items: center;}
+        }
+        /* Smaller screens (phones) */
+        @media all and (max-width: 767px) {
+            .bg-image {background-image:url('../images/1372134458-mobile.jpg'); background-position: center; background-size: cover; min-height: 500px; display: flex; justify-content: center; align-items: center;}
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
+ 
+    </head>
+    
+    <body>
+        
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">SpaceSec 2026</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="program.html#program">Program</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#papers">Accepted Papers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#cfp">Call for Papers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#committee">Organization</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../past_workshops.html">Past Workshops</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Current Workshop</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <script>
+            // Add JavaScript to close the collapse menu using Bootstrap animation
+            var navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+            var navbarToggler = document.querySelector('.navbar-toggler');
+        
+            navLinks.forEach(function (link) {
+                link.addEventListener('click', function () {
+                    if (navbarToggler.classList.contains('collapsed')) {
+                        // Menu is already closed
+                        return;
+                    }
+                    navbarToggler.click(); // Trigger click event to close the menu
+                });
+            });
+        </script>
+        
+        <div class="p-5 text-white bg-image">
+            <div style="background-color: rgba(52, 58, 64, 0.5);" class="p-5 rounded">
+                <h1>SpaceSec 2026</h1>
+                <h2>4th Workshop on the Security of Space and Satellite Systems</h2>
+                <h3>Co-located with the <a class="text-white" href="https://www.ndss-symposium.org/">NDSS Symposium</a></h3>
+                <h3>23 February 2026</h3>
+            </div>
+        </div>
+        
+        <div class="container mt-4">
+            <p>In recent years, the number of satellites in orbit has surged dramatically, driven by the deployment of large-scale mega-constellations such as Starlink and OneWeb. Current projections estimate that more than 100,000 satellites will be launched in the coming decade, positioning satellite communication as a critical backbone of both consumer services and essential infrastructures.</p>
+            <p>Space-based systems are now providing a wide array of vital societal functions—ranging from global navigation and positioning, to telecommunication, Earth observation, and IoT connectivity. Yet, their central role in modern infrastructure also makes them highly attractive targets for cyber attacks. This risk is not theoretical: the attack on ViaSat during the early stages of the war in Ukraine and persistent disruptions of Global Navigation Satellite Systems (GNSS) worldwide highlight the tangible threats facing the domain.</p>
+            <p>Concerns about the cybersecurity of satellite systems have circulated since the mid-2000s, echoed in both academic research and hacker communities. Recent publications at leading security venues have reignited these debates, demonstrating that many long-standing vulnerabilities remain unresolved—and are now magnified by the unprecedented scale of satellite deployment. This raises a pressing question: why do these issues persist, despite years of awareness?</p>
+            <p>The answer lies, at least in part, in the unique nature of the space environment. The constraints of satellite design, deployment, and operation introduce challenges unlike those found in terrestrial systems. Addressing them requires novel approaches and interdisciplinary research at the intersection of space systems and cybersecurity.</p>
+            
+            <h1>Important Dates</h1>
+            
+            <table class="table table-striped table-borderless">
+                <tbody>
+                    <tr>
+                        <td>Paper Submission Deadline</td>
+                        <td><s>9 November 2025 (AoE)</s> <strong>16 November 2025 (AoE)</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Notification of Acceptance</td>
+                        <td>16 December 2025 (AoE)</td>
+                    </tr>
+                    <tr>
+                        <td>Workshop Date</td>
+                        <td>23 February 2026 (Pacific Standard Time)</td>
+                    </tr>
+                    <tr>
+                        <td>Camera Ready Submission</td>
+                        <td><s>22 March 2026 (AoE)</s> <strong>30 January 2026 (AoE)</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <hr>    
+            <!-- <h1 id="keynote" style="scroll-margin-top: 70px">Keynote Talk</h1>
+            <br>
+            <div class="d-flex align-items-center">
+                <div class="flex-shrink-0">
+                    <img
+                    src="images/AshokPrajapati25.jpeg"
+                    alt="Dr. Ashok Prajapati"
+                    class="rounded-circle col-md-1"
+                    style="width: 100px; height: 100px;"
+                    />
+                </div>
+                <div class="flex-grow-1 ms-3">
+                    <h3>Title: The NASA's <a href="https://etd.gsfc.nasa.gov/capabilities/core-flight-system/">core Flight System</a> (cFS) 2.0 and Beyond</h3>
+                    <p>Speaker: Dr. Ashok Prajapati</p>
+                </div>
+            </div>
+            <br>
+            <p>Dr. Ashok Prajapati is an accomplished technology leader and researcher with more than 20 years of experience across diverse domains. With a solid foundation as an Engineer, Researcher, and People Leader, he serves as the cFS Program Manager and Deputy Software Tech Fellow at NASA's Goddard Space Flight Center (GSFC), where he contributes to groundbreaking missions to Mars, the Moon, and beyond. Prior to this, Ashok was an Engineering Manager at General Dynamics Land Systems.</p>
+
+            <p>In addition to his professional achievements, Ashok is a dedicated volunteer with over 15 years of service to IEEE. He has held several leadership roles, including Senior Member, Vice-Chair and Director with IEEE CS Southeastern Michigan, and Editor-in-Chief of the International Journal of Forensic Software for more than five years. He is also actively engaged with the American Institute of Aeronautics and Astronautics (AIAA) as a member of the Software Technical Committee (SWTC).
+            Ashok holds a Bachelor's and Master's degree in computer engineering, as well as a Ph.D. in Electrical and Computer Engineering, specializing in AI/ML. His research interests encompass Artificial Intelligence, Machine Learning, Robotics, Operating Systems, Computer Networking, Cyber Security, and Autonomous Driving, among others.</p>
+            <hr> -->
+            <h1 id="papers" style="scroll-margin-top: 70px">Accepted Papers</h1>
+            <div class="card">
+            <ul class="list-group list-group-flush bg-light">
+                <li class="list-group-item bg-light">
+                    <div class="row">
+                        <div class="col-12"><h4>Accepted Long Papers</h4></div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                    <div class="col-12">
+                        <strong>
+                            <a href="https://www.ndss-symposium.org/ndss-paper/porting-nasas-core-flight-system-to-the-formally-verified-sel4-microkernel/">Porting NASA's core Flight System to the Formally Verified seL4 Microkernel</a>
+                            <!-- <a href="https://www.ndss-symposium.org/wp-content/uploads/spacesec26-3.pdf">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-pdf" viewBox="0 0 16 16">
+                                    <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1"/>
+                                    <path d="M4.603 12.087a.8.8 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.7 7.7 0 0 1 1.482-.645 20 20 0 0 0 1.062-2.227 7.3 7.3 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.187-.012.395-.047.614-.084.51-.27 1.134-.52 1.794a11 11 0 0 0 .98 1.686 5.8 5.8 0 0 1 1.334.05c.364.065.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.86.86 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.7 5.7 0 0 1-.911-.95 11.6 11.6 0 0 0-1.997.406 11.3 11.3 0 0 1-1.021 1.51c-.29.35-.608.655-.926.787a.8.8 0 0 1-.58.029m1.379-1.901q-.25.115-.459.238c-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361q.016.032.026.044l.035-.012c.137-.056.355-.235.635-.572a8 8 0 0 0 .45-.606m1.64-1.33a13 13 0 0 1 1.01-.193 12 12 0 0 1-.51-.858 21 21 0 0 1-.5 1.05zm2.446.45q.226.244.435.41c.24.19.407.253.498.256a.1.1 0 0 0 .07-.015.3.3 0 0 0 .094-.125.44.44 0 0 0 .059-.2.1.1 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a4 4 0 0 0-.612-.053zM8.078 5.8a7 7 0 0 0 .2-.828q.046-.282.038-.465a.6.6 0 0 0-.032-.198.5.5 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822q.036.167.09.346z"/>
+                                </svg>
+                            </a> -->
+                        </strong>
+                        <p>Juliana Furgala, Samuel Jero, Andrea Lin, Rick Skowyra (MIT Lincoln Laboratory)</p>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="col-12">
+                        <strong><a href="https://www.ndss-symposium.org/ndss-paper/auto-draft-640/">Risk Assessment for ML-Based Applications in Satellite Systems</a></strong>
+                        <p>Simon Shigol, Roy Peled, Avishag Shapira, Yuval Elovici, Asaf Shabtai (Ben Gurion University of the Negev)</p>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="col-12">
+                        <strong><a href="https://www.ndss-symposium.org/ndss-paper/auto-draft-641/">Orbital Escalation: Modeling Satellite Ransomware Attacks Using Game Theory</a></strong>
+                        <p>Efrén López-Morales (New Mexico State University)</p>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="col-12">
+                        <strong><a href="https://www.ndss-symposium.org/ndss-paper/auto-draft-642/">The 1-RTT Penalty: Quantifying the Recurring Cost of PQC Fragmentation in LEO Handovers and ISLs</a></strong>
+                        <p>Young Eun Kwon, Ji Won Yoon (Korea University)</p>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="col-12">
+                        <strong><a href="https://www.ndss-symposium.org/ndss-paper/auto-draft-643/">LighTellite: Reinforcement Learning-Based Framework for Energy Efficient Onboard Satellite Anomaly Detection</a></strong>
+                        <p>Aviel Ben Siman Tov, Edita Grolman, Yuval Elovici, Asaf Shabtai (Ben Gurion University of the Negev)</p>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="col-12">
+                        <strong><a href="https://www.ndss-symposium.org/ndss-paper/auto-draft-644/">The Compromised Satellite Peripheral Dilemma</a></strong>
+                        <p>Rachel McAmis, Connor Willison, Richard Skowyra, Samuel Mergendahl (MIT Lincoln Laboratory)</p>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="col-12">
+                        <strong><a href="https://www.ndss-symposium.org/ndss-paper/auto-draft-645/">Why is Space Cybersecurity Unique?</a></strong>
+                        <p>Rajiv Thummala (Cornell University), Eric Rice (Jet Propulsion Laboratory, California Institute of Technology), Gregory Falco (Cornell University)
+
+</p>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="col-12">
+                        <strong><a href="https://www.ndss-symposium.org/ndss-paper/auto-draft-646/">Towards automated threat modeling for space systems via SPARTA matrix</a></strong>
+                        <p>Joonhyuk Park, Jiwon Kwak, Geunwoo Baek, Dohee Kang, Seungjoo Kim (School of Cybersecurity, Korea University)</p>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="col-12">
+                        <strong><a href="https://www.ndss-symposium.org/ndss-paper/auto-draft-647/">One Small Patch for a File, One Giant Leap for OTA Updates</a></strong>
+                        <p>Julian Rederlechner, Ulysse Planta, Ali Abbasi (CISPA Helmholtz Center for Information Security)</p>
+                    </div>
+                </li>
+            </ul>
+            <ul class="list-group list-group-flush bg-light">
+                <li class="list-group-item bg-light">
+                    <div class="row">
+                        <div class="col-12"><h4>Accepted Short Papers</h4></div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                    <div class="col-12">
+                        <strong><a href="https://www.ndss-symposium.org/ndss-paper/auto-draft-648/">Self-Organizing Resilience for Long-Term Threat Adaptation in Neuromorphic Space Systems</a></strong>
+                        <p>Sylvester Kaczmarek (Imperial College London)</p>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="col-12">
+                        <strong><a href="https://www.ndss-symposium.org/ndss-paper/auto-draft-649/">Temporal Risk on Satellites</a></strong>
+                        <p>Shiqi Liu, Kun Sun (Center for Secure Information Systems, George Mason University)</p>
+                    </div>
+                </li>
+            </ul>
+            <ul class="list-group list-group-flush bg-light">
+                <li class="list-group-item bg-light">
+                    <div class="row">
+                        <div class="col-12"><h4>Accepted Posters</h4></div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                    <div class="col-12">
+                        <strong><a href="https://www.ndss-symposium.org/ndss-paper/auto-draft-744/">PCDR: Probabilistic Chunk-Dispersed Routing for Mitigating Link-Flooding Attack in LSN</a></strong>
+                        <p>Hyeon-Min Choi, Jae-Hyeon Park, Eun-Kyu Lee (Incheon National University)</p>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="col-12">
+                        <strong><a href="https://www.ndss-symposium.org/ndss-paper/auto-draft-745/">Secure and Scalable Rerouting in LEO Satellite Networks</a></strong>
+                        <p>Lyubomir Yanev, Pietro Ronchetti (ETH Zurich); Joshua Smailes (University of Oxford); Martin Strohmeier (armasuisse)</p>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="col-12">
+                        <strong><a href="https://www.ndss-symposium.org/ndss-paper/auto-draft-746/">Securing Relay Satellite System: Direct MAC Transmission by Superposition Coding</a></strong>
+                        <p>SeyedMohammad Kashani, Branden Lloyd Buhler, Sang Kim, Ashfaq Khokhar (Iowa State University)</p>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="col-12">
+                        <strong><a href="https://www.ndss-symposium.org/ndss-paper/auto-draft-747/">Challenges in Applying COTS Secure, Resilient Boot and Update Capabilities for Space Systems</a></strong>
+                        <p>Gabriel Torres, Raymond Govotski, Samuel Jero, Richard Skowyra, Samuel Mergendahl (MIT Lincoln Laboratory); Gruia-Catalin Roman (University of New Mexico); Joseph Trujilo (Air Force Research Laboratory Space Vehicles Directorate)</p>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="col-12">
+                        <strong><a href="https://www.ndss-symposium.org/ndss-paper/auto-draft-748/">Crowdsourcing and Mapping COSPAS-SARSAT 406MHz Distress Beacons</a></strong>
+                        <p>Ahsan Saleem, Andrei Costin (University of  Jyväskylä, Finland); Guillermo Suarez-Tangil (IMDEA Networks Institute Madrid, Spain)</p>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="col-12">
+                        <strong><a href="https://www.ndss-symposium.org/ndss-paper/auto-draft-749/">From Earth to Orbit: A Quantum-Secure Authentication Key-Establishment Mechanism to Defend Satellite Communications in the Quantum Age</a></strong>
+                        <p>Salman Shamshad, Waqas Bin Abbas, Sana Belguith, Lucy Berthoud (University of Bristol, Bristol, United Kingdom)</p>
+                    </div>
+                </li>
+            </ul>
+            </div>
+            <br>
+		
+            <hr>
+
+            <!-- This helps us to make sure the heading is not hidden under the navbar -->
+            <h1 id="cfp" style="scroll-margin-top: 70px">Call for Papers</h1>
+            <!-- <h1 id="cfp">Call for Papers</h1> -->
+            <p>The scope of SpaceSec covers all systems that are directly or indirectly connected to, or dependent on, space and satellite infrastructures. This includes communication links (satellite–ground and satellite–satellite), the ground segment (such as ground stations and terrestrial systems relying on satellite communications), and the space segment (including satellites and launch vehicles). We also consider the broad ecosystem of applications, use cases, and dependencies built upon satellite services. While all orbital regimes are of interest, particular emphasis is placed on research related to modern Low Earth Orbit (LEO) mega-constellations.</p>
+            <p>SpaceSec welcomes security contributions that demonstrate clear relevance to space and satellite systems and applications. Topics of interest include, but are not limited to:</p>
+                    <h3>Space Systems Security</h3>
+                    <ul>
+                        <li>Small Satellite and CubeSat Security</li>
+                        <li>Ground/User Segment Attacks and Vulnerabilities</li>
+                        <li>Legacy Space System Security Analysis</li>
+                        <li>Space System Security Testbeds</li>
+                        <li>Measurement Infrastructure and Data Collection of Space Mission Security Data</li>
+                        <li>Security of Launch Vehicles and Launch Processes</li>
+                        <li>GNSS Attack and Defense Mechanisms</li>
+                        <li>Security of Space Situational Awareness (SSA) Technologies</li>
+                        <li>Data- and ML-driven Security of Space Missions</li>
+                        <li>Secure Satellite Software/Hardware Development</li>
+                        <li>Reverse Engineering and Tampering of Space and Ground Segments</li>
+                        <li>Side-Channels and Fault Attacks on Space- or User Segment Devices</li>
+                        <li>In-Orbit Intrusion Detection</li>
+                    </ul>
+
+                    <h3>Communications Security</h3>
+                    <ul>
+                        <li>Satellite Link Jamming and Spoofing</li>
+                        <li>Securing and Attacking Inter-Satellite Links</li>
+                        <li>Optical Satellite Communication Security</li>
+                        <li>(Post-quantum) Cryptography for Space Communications</li>
+                        <li>LEO Constellation Routing Security</li>
+                        <li>Secure Optimized Satellite Communication Protocols (e.g., PEPs, QUIC)</li>
+                        <li>Key Management for (LEO) Constellations and Space Systems</li>
+                    </ul>
+
+                    <h3>Privacy and Usability</h3>
+                    <ul>
+                        <li>Localization and Anonymity in Satellite Networks</li>
+                        <li>Privacy Issues in Satellite Communication</li>
+                        <li>Ethical Aspects of Satellite Security</li>
+                        <li>Usability of Existing Space Software and Standards</li>
+                    </ul>
+
+                    <h3>Space Security Strategies</h3>
+                    <ul>
+                        <li>Economics of Space Security</li>
+                        <li>Game Theory-based Security Analysis Approaches</li>
+                        <li>Red Teaming and Blue Teaming in Space</li>
+                        <li>Supply Chain Security for Space Mission Components</li>
+                        <li>Forensics in Space Security Incidents</li>
+                    </ul>
+            
+            <h2>Submission Guidelines</h2>
+            <p>All papers must be original and not simultaneously submitted to another journal or conference. The following paper types are welcome:</p>
+            
+            <p><strong>Short Paper:</strong> Maximum 4 pages. Short papers should provide enough context for the reader to understand the contribution. Preliminary work is encouraged but not required.</p>
+            
+            <p><strong>Long Paper:</strong> Maximum 8 pages. Traditional research papers.</p>
+            
+            <p>Submissions should follow the double-column <a href="https://www.ndss-symposium.org/ndss2026/submissions/templates/">NDSS format</a>. Page limits exclude the bibliography and appendices, which can be up to 2 pages for long papers and 1 page for short papers.</p>
+            
+            <div class="container p-5 bg-light">
+                <strong>Submission link:</strong> <a href="https://spacesec26.hotcrp.com/">https://spacesec26.hotcrp.com/</a>
+                <!-- <strong>Submission link:</strong> To be announced -->
+            </div>
+            
+            <br>
+            
+            <p>We invite submissions in the following categories:</p>
+            
+            <ul>
+                <li><strong>Research Paper:</strong> A novel contribution in line with the topics of interest.</li>
+                <li><strong>Position Paper:</strong> New or provocative ideas of interest to the satellite and space communities.</li>
+                <li><strong>Experience Paper:</strong> Lessons learned from experiments or deployments.</li>
+                <li><strong>Preliminary Work Paper:</strong> Early results from interesting and new ideas.</li>
+                <li><strong>Extended Work Paper:</strong> Unpublished aspects of previously published work.</li>
+            </ul>
+            
+            <p><strong>Anonymization and the Review Process:</strong> The review process is double-blind. All submissions should be anonymized.</p>
+            
+            <p><strong>Publication:</strong> SpaceSec26 proceedings will be published post-conference with the NDSS 2026.</p>
+            
+            <p><strong>Further Notes:</strong> At least one author of each accepted paper must register for the workshop and present the paper. Simultaneous submission of the same work to multiple venues, submission of previously published work, and plagiarism are prohibited.</p>
+
+            <hr>
+            
+            <!-- This helps us to make sure the heading is not hidden under the navbar -->
+            <h1 id="committee" style="scroll-margin-top: 70px">Organization</h1>
+
+            <h3>TPC and General Co-Chairs</h3>
+            <p>Vincent Lenders, University of Luxembourg (LUX), <a href="mailto:vincent.lenders@uni.lu">vincent.lenders@uni.lu</a></p>
+            <p>Gunes Karabulut Kurt, Polytechnique Montréal (CA), <a href="mailto:gunes.kurt@polymtl.ca">gunes.kurt@polymtl.ca</a></p>
+
+            <h3>Steering Committee</h3>
+            <ul>
+                <li>Vincent Lenders, University of Luxembourg (LUX)</li>
+                <li>Ivan Martinovic, University of Oxford (UK)</li>
+                <li>Christina Pöpper, NYU Abu Dhabi (UAE)</li>
+                <li>Knut Eckstein, European Space Agency (Europe)</li>
+                <li>Martin Strohmeier, Cyber-Defence Campus, armasuisse (CH)</li>
+                <li>Johannes Willbold, Ruhr University Bochum (DE)</li>
+                <li>Samuel Jero, MIT Lincoln Lab (USA)</li>
+                <li>Aanjhan Ranganathan, Northeastern University (USA)</li>
+            </ul>
+
+            <h3>Web Chair</h3>
+            <p>Simon Birnbach, University of Oxford (UK), <a href="mailto:simon.birnbach@cs.ox.ac.uk">simon.birnbach@cs.ox.ac.uk</a></p>
+
+            <h3>Publicity Chair</h3>
+            <p>Jessie Hamill-Stewart, University of Bath and University of Bristol (UK), <a href="mailto:jessie.hamill-stewart@bristol.ac.uk">jessie.hamill-stewart@bristol.ac.uk</a></p>
+
+            <h3>Program Committee</h3>
+                    <ul>
+                        <li>Ali Abbasi, CISPA Helmholtz Center for Information Security</li>
+                        <li>Antonios Atlasis, European Space Agency</li>
+                        <li>Christoph Bader, European Space Agency</li>
+                        <li>Brandon Bailey, The Aerospace Corporation</li>
+                        <li>Olfa Ben Yahia, Polytechnique Montréal</li>
+                        <li>Simon Birnbach, University of Oxford</li>
+                        <li>Yueqi Chen, University of Colorado Boulder</li>
+                        <li>Bruce DeBruhl, California Polytechnic State University, San Luis Obispo</li>
+                        <li>Knut Eckstein, European Space Agency</li>
+                        <li>Gregory Falco, Cornell University</li>
+                        <li>Daniel Fischer, European Space Agency</li>
+                        <li>Giacomo Giuliari, Mysten Labs</li>
+                        <li>Andreas Hein, University of Luxembourg</li>
+                        <li>Stephen Herwig, William & Mary</li>
+                        <li>Eric Jedermann, RPTU Kaiserslautern-Landau</li>
+                        <li>Samuel Jero, MIT Lincoln Lab</li>
+                        <!-- <li>Gunes Karabulut Kurt, Polytechnique Montréal</li> -->
+                        <li>Sebastian Köhler, University of Oxford</li>
+                        <!-- <li>Vincent Lenders, University of Luxembourg</li> -->
+                        <li>Patrick Lin, California Polytechnic State University</li>
+                        <li>Ulf Lindqvist, SRI</li>
+                        <li>Mark Manulis, Universität der Bundeswehr München</li>
+                        <li>Ivan Martinovic, University of Oxford</li>
+                        <li>James Pavur, Cysec Labs</li>
+                        <li>Christina Pöpper, NYU Abu Dhabi</li>
+                        <li>Aanjhan Ranganathan, Northeastern University</li>
+                        <li>Harshad Sathaye, ETH Zürich</li>
+                        <li>Stephen Schwab, USC Information Sciences Institute</li>
+                        <li>Mridula Singh, CISPA Helmholtz Center for Information Security</li>
+                        <li>Georgios Smaragdakis, TU Delft</li>
+                        <li>Martin Strohmeier, Cyber-Defence Campus, armasuisse Science & Technology</li>
+                        <li>Nils Ole Tippenhauer, CISPA Helmholtz Center for Information Security</li>
+                        <li>Howard Weiss, Parsons, Inc.</li>
+                        <li>Johannes Willbold, Ruhr University Bochum</li>
+                        <li>Simay Yilmaz, Izmir Katip Celebi University</li>
+                    </ul>
+           
+        <hr>
+        
+            <br>
+            <br>
+        </div>
+
+    </body>
+    </html>
